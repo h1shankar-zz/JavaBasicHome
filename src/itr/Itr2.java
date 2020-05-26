@@ -10,4 +10,6 @@ public interface Itr2 {
 	{
 		System.out.println("f2 static  of Itr1");
 	}
+	 
+	 
 }
