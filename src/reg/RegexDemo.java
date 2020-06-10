@@ -7,8 +7,8 @@ public class RegexDemo {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//testPattern1();
-		testFormatter();
-		
+		//testFormatter();
+		System.out.println(Pattern.matches("[4-5]+", "554"));
 	}
 	
 	public static void testPattern()
