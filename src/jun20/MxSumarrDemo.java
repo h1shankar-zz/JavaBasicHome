@@ -7,7 +7,26 @@ public class MxSumarrDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		getMaxSum();
+		
+		String str="harishankar";
+		char[] ch= str.toCharArray();
+		int l= ch.length;
+		int cnt=0;
+		for(int i=0; i<l;i++)
+		{
+			cnt=1;
+			for(int j=i+1;j<l;j++)
+			{
+				if(ch[i]==ch[j]&&ch[i]!='#')
+				{
+					cnt++;
+					ch[j]='#';
+				}
+			}
+			if(ch[i]!='#')
+			System.out.println(ch[i] +" : "+cnt);
+		}
+		
 	}
 	
 	public static void getMaxSum()
