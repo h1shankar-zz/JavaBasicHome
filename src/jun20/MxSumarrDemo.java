@@ -7,28 +7,21 @@ public class MxSumarrDemo {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		
-		String str="harishankar";
-		char[] ch= str.toCharArray();
-		int l= ch.length;
-		int cnt=0;
-		for(int i=0; i<l;i++)
-		{
-			cnt=1;
-			for(int j=i+1;j<l;j++)
-			{
-				if(ch[i]==ch[j]&&ch[i]!='#')
-				{
-					cnt++;
-					ch[j]='#';
-				}
-			}
-			if(ch[i]!='#')
-			System.out.println(ch[i] +" : "+cnt);
-		}
-		
-	}
+		int a=2,b=11;
+		System.out.println("lcm of 2 nums :"+getMul(a,b)/getGCD(a,b));
 	
+	}
+	public static int getMul(int a, int b)
+	{
+		return a*b;
+	}
+	public static int getGCD(int a,int b)
+	{
+		if(a==0)
+			return b;
+		else
+			return getGCD(b%a ,a);
+	}
 	public static void getMaxSum()
 	{
 		List<Integer> lst= new ArrayList<Integer>();
